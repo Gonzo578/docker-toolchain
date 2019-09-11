@@ -1,6 +1,6 @@
 FROM toolchain/ubuntu-18.04:latest
 
-MAINTAINER Ralf Hochhausen <micro@ralf-hochhausen.de>
+LABEL maintainer="Ralf Hochhausen <micro@ralf-hochhausen.de>"
 
 ARG MINOR_VERSION=3.15
 ARG PATCH_VERSION=3

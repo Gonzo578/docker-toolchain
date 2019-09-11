@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-MAINTAINER Ralf Hochhausen <micro@ralf-hochhausen.de>
+LABEL maintainer="Ralf Hochhausen <micro@ralf-hochhausen.de>"
 
 # Install correct time zone
 ARG TIMEZONE='Europe/Berlin'
