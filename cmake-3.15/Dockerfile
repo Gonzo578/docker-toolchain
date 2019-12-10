@@ -2,8 +2,8 @@ FROM toolchain/ubuntu-18.04:latest
 
 LABEL maintainer="Ralf Hochhausen <micro@ralf-hochhausen.de>"
 
-ARG MINOR_VERSION=3.15
-ARG PATCH_VERSION=3
+ARG MINOR_VERSION=3.10
+ARG PATCH_VERSION=2
 ARG VERSION="$MINOR_VERSION.$PATCH_VERSION"
 ARG ARCH="Linux-x86_64"
 

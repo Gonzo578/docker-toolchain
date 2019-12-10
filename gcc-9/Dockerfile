@@ -1,4 +1,4 @@
-FROM toolchain/ubuntu-18.04-cmake-3.15:latest
+FROM toolchain/ubuntu-18.04-cmake-3.10:latest
 
 LABEL maintainer="Ralf Hochhausen <micro@ralf-hochhausen.de>"
 
