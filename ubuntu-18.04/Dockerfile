@@ -35,3 +35,7 @@ RUN pip3 install --upgrade pip \
  && hash -r pip3 \
  && pip3 install -I pyyaml~=3.12
 
+# Install clang-tidy code checker
+RUN apt update \
+ && apt install clang-tidy -y --no-install-recommends
+
