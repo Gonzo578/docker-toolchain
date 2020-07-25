@@ -47,10 +47,10 @@ RUN pip3 install --upgrade pip \
 # *****************************************************************************
 
 # *****************************************************************************
-# Install clang-tidy code checker
+# Install clang tools
 # *****************************************************************************
 RUN apt update \
- && apt install clang-tidy -y --no-install-recommends
+ && apt install clang-format clang-tidy -y --no-install-recommends
 
 # *****************************************************************************
 # Install cmake with a specific version
