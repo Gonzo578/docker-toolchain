@@ -71,3 +71,12 @@ RUN cd opt \
  && ln -sf /opt/cmake-$VERSION-$ARCH/bin/cmake-gui /usr/bin/cmake-gui \
  && ln -sf /opt/cmake-$VERSION-$ARCH/bin/cpack /usr/bin/cpack \
  && ln -sf /opt/cmake-$VERSION-$ARCH/bin/ctest /usr/bin/ctest
+ 
+# *****************************************************************************
+# Install doxygen
+# Note: We don't insall doxygen with the latex package. This needs to be
+# added manually
+# *****************************************************************************
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends doxygen \
+ && apt-get install -y graphviz
