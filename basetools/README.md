@@ -26,4 +26,6 @@ SW Development Tools
 ------------
 
 * Clang-tidy
+* CMake 3.15.2
+* Doxygen & Graphviz
 * make
