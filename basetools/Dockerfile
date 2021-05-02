@@ -34,6 +34,10 @@ RUN apt-get update \
     wget \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
+ 
+# Install snap tools
+RUN apt update \
+ && apt install -y snapd 
 
 # Install python package manager
 RUN pip3 install --upgrade pip \
