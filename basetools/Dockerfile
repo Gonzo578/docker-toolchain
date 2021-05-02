@@ -75,6 +75,11 @@ RUN cd opt \
  && ln -sf /opt/cmake-$VERSION-$ARCH/bin/cmake-gui /usr/bin/cmake-gui \
  && ln -sf /opt/cmake-$VERSION-$ARCH/bin/cpack /usr/bin/cpack \
  && ln -sf /opt/cmake-$VERSION-$ARCH/bin/ctest /usr/bin/ctest
+
+# *****************************************************************************
+# Install conan tools
+# *****************************************************************************
+ RUN   pip install -q --no-cache-dir conan conan-package-tools --upgrade
  
 # *****************************************************************************
 # Install doxygen
